@@ -1,0 +1,38 @@
+header .row {
+    background-color: #402c23;
+    color: white;
+    padding: 25px;
+}
+header .navbar {
+    background-color:#f5f5dc;
+}
+header #zap img {
+    width: 36px;
+    height: 36px;
+}
+header .navbar img{
+    width: 250px;
+    height: 125px;
+}
+header {
+    text-align: center;
+}
+.carousel-item img{
+    width: 1200px;
+    height: 550px;
+}
+.foco .col-md-4  {
+    background-color: red;
+    width: 33%;
+}
+h2 {
+    text-align:center;
+}
+footer {
+    background-color: #402c23;
+    color: white;
+}
+footer img {
+    width: 150px;
+    height: 75px;
+}
