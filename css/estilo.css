@@ -2,6 +2,7 @@ header .row {
     background-color: #402c23;
     color: white;
     padding: 25px;
+    margin: 0;
 }
 header .navbar {
     background-color:#f5f5dc;
@@ -17,15 +18,48 @@ header .navbar img{
 header {
     text-align: center;
 }
+
+.carousel-caption {
+    bottom: 440px;
+}
+
+.carousel-indicators {
+    bottom: 50px;
+}
+
 .carousel-item img{
     width: 1200px;
     height: 550px;
 }
-.foco .col-md-4  {
-    background-color: red;
-    width: 33%;
+
+.foco .row {
+    margin-top: -50px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
-h2 {
+
+.foco .card {
+    background-color: transparent;
+    border: none;
+}
+.foco .card-body  {
+    background-color: #402c23;
+    border-radius: 35px;
+    color: white;
+    height: 300px;
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.foco p {
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 18px;
+}
+.foco h2 {
+    margin-top: 20px;
     text-align:center;
 }
 footer {
@@ -35,4 +69,30 @@ footer {
 footer img {
     width: 150px;
     height: 75px;
+}
+
+.contato {
+    background-color: #f5f5dc;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.pacotes {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
+
+}
+.pacotes h2 {
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.pacotes .icon {
+    width: 60px;
+    height: 60px;
+    background-color: #f5f5dc;
+    float: left;
+    margin-right: 15px;
 }
