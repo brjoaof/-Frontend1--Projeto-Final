@@ -80,10 +80,7 @@ header .row .col-md-4 {
 footer {
     background-color: #402c23;
     color: white;
-}
-footer img {
-    width: 150px;
-    height: 75px;
+    position: relative;
 }
 
 .contato {
@@ -118,4 +115,27 @@ footer img {
 .nav-link {
     margin-left: 60px;
     font-size: 23px;
+}
+footer li {
+    display: inline-block;
+}
+.social img {
+    width: 50px;
+    height: 50px;
+}
+.logofooter img {
+    width: 300px;
+    height: 150px;
+}
+footer ul {
+    margin: 0;
+    margin-left: 177px;
+}
+.ig {
+    width: 67px !important;
+    height: 67px !important;
+}
+.frase {
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 120px;
 }
