@@ -87,6 +87,11 @@ footer {
     background-color: #f5f5dc;
     padding-right: 50px;
     padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+.contato .container {
+    display: contents;
 }
 
 .pacotes {
@@ -138,4 +143,15 @@ footer ul {
 .frase {
     font-family: 'Courier New', Courier, monospace;
     padding-left: 120px;
+}
+footer .row div {
+    display: flex;
+    align-items: center;
+}
+.menu img {
+    width: 70px !important;
+    height: 70px !important; 
+}
+.navbar-light .navbar-toggler {
+    border: none;
 }
