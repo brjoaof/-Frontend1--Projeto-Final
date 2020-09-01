@@ -1,13 +1,13 @@
 header .row {
     background-color: #402c23;
     color: white;
-    padding: 25px;
+    padding: 5px;
     margin: 0;
 }
 header .navbar {
     background-color:#f5f5dc;
 }
-header #zap img {
+header img {
     width: 36px;
     height: 36px;
 }
@@ -19,8 +19,23 @@ header {
     text-align: center;
 }
 
+header .row .col-md-4 {
+    margin: auto;
+}
+
+.login {
+    display: inline-block;
+    border-radius: 10px;
+    border-style: groove;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
 .carousel-caption {
-    bottom: 440px;
+    bottom: 396px;
 }
 
 .carousel-indicators {
@@ -95,4 +110,12 @@ footer img {
     background-color: #f5f5dc;
     float: left;
     margin-right: 15px;
+}
+.icon img {
+    width: 60px;
+    height: 60px;
+}
+.nav-link {
+    margin-left: 60px;
+    font-size: 23px;
 }
