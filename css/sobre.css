@@ -1,0 +1,20 @@
+.h3, h3{
+    text-align: center;    
+}
+.card-img {
+    width: 300px;
+    height: 300px;
+}
+.col-md-4 {
+    text-align: center;
+    margin-top: auto;
+}
+.row {
+    margin-top: 53px;
+}
+.historia {
+    padding-top: 70px;
+    text-align: justify;
+    margin-left: 90px;
+    margin-right: 90px;
+}
