@@ -28,19 +28,19 @@
                     <!--LOGIN DROPDOWN-->
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onmouseover="verLogin()">
                             Olá, faça seu login<br>ou cadastre-se!
                         </button>
                         <div class="dropdown-menu">
-                            <form class="px-4 py-3">
+                            <form class="px-4 py-3" id="menuLogin">
                                 <div class="form-group">
                                     <label for="exampleDropdownFormEmail1">Endereço de email</label>
-                                    <input type="email" class="form-control" id="exampleDropdownFormEmail1"
+                                    <input type="email" class="form-control" id="email"
                                         placeholder="email@exemplo.com">
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleDropdownFormPassword1">Senha</label>
-                                    <input type="password" class="form-control" id="exampleDropdownFormPassword1"
+                                    <input type="password" class="form-control" id="senha"
                                         placeholder="Senha">
                                 </div>
                                 <div class="form-check">
@@ -49,11 +49,16 @@
                                         Remember me
                                     </label>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Entrar</button>
+                                <button type="submit" class="btn btn-primary" onclick="login()">Entrar</button>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Novo, por aqui? Regitre-se.</a>
+                                <a class="dropdown-item" href="#">Esqueceu a senha?</a>
                             </form>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Novo, por aqui? Regitre-se.</a>
-                            <a class="dropdown-item" href="#">Esqueceu a senha?</a>
+                            <div id="menuCliente" style="display: none">
+                                <button class="dropdown-item" type="button">Meus Dados</button>
+                                <button class="dropdown-item" type="button">Minhas Compras</button>
+                                <button class="dropdown-item" type="button" onclick="sair()">Sair</button>
+                              </div>
                         </div>
                     </div>
                     <!--FIM DO LOGIN DROPDOWN-->
