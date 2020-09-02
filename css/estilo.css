@@ -32,6 +32,7 @@ header .row .col-md-4 {
     text-align: center;
     padding-right: 25px;
     padding-left: 25px;
+    margin-right: 10px;
 }
 
 .carousel-caption {
@@ -188,4 +189,24 @@ footer .row div {
 .submeter {
     background-color: #402c23;
     border: #402c23;
+}
+
+.itensPedidos {
+    position: relative;
+    left: -22px;
+    bottom: 13px;
+    font-size: x-large;
+    font-weight: 500;
+    color: coral;
+}
+
+.col-md-4 .container {
+    display: flex;
+    align-items: center;
+    max-inline-size: fit-content;
+}
+
+#dropdownMenuButton {
+    margin-left: 4px;
+    margin-right: 8px;
 }
