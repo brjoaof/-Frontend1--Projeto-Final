@@ -88,6 +88,7 @@ footer {
     padding-right: 50px;
     padding-left: 50px;
     padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .contato .container {
@@ -154,4 +155,37 @@ footer .row div {
 }
 .navbar-light .navbar-toggler {
     border: none;
+}
+.doarecebe .card-body  {
+    background-color: #402c23;
+    border-radius: 35px;
+    color: white;
+    height: 150px;
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.doarecebe .row {
+    margin-top: -50px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.doarecebe .card {
+    background-color: transparent;
+    border: none;
+}
+.doarecebe .icon {
+    width: 60px;
+    height: 60px;
+    /* background-color: #f5f5dc; */
+    float: left;
+    margin-right: 15px;
+}
+.doarecebe .row {
+    margin-bottom: -30px;
+}
+.submeter {
+    background-color: #402c23;
+    border: #402c23;
 }
