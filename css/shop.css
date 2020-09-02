@@ -1,0 +1,17 @@
+.gridProdutos .col-md-4 {
+    background-color: #f5f5dc;
+    border: solid #402c23;
+    height: 380px;
+    margin: 20px auto 0 auto;
+    min-width: 300px;
+    max-width: 300px;
+}
+.col-md-2 {
+    border: solid #402c23;
+    margin: 20px auto 0 auto;
+    min-width: 250px;
+    max-width: 300px;
+}
+.col-md-2 h2 {
+    text-align: center;
+}

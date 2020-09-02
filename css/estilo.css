@@ -52,8 +52,10 @@ header .collapse .navbar-nav {
 }
 
 .carousel-item img{
-    width: 1200px;
+    width: 1200px !important;
     height: 550px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .foco .row {
@@ -89,7 +91,6 @@ header .collapse .navbar-nav {
 footer {
     background-color: #402c23;
     color: white;
-    position: relative;
 }
 
 .contato {
@@ -138,20 +139,19 @@ footer {
 .nav-link {
     font-size: 23px;
 }
+footer ul {
+    margin: 0;
+    padding: 0;
+}
 footer li {
     display: inline-block;
+}
+footer .col-md-12 {
+    text-align: center;
 }
 .social img {
     width: 50px;
     height: 50px;
-}
-.logofooter img {
-    width: 300px;
-    height: 150px;
-}
-footer ul {
-    margin: 0;
-    margin-left: 177px;
 }
 .ig {
     width: 67px !important;
@@ -159,12 +159,8 @@ footer ul {
 }
 .frase {
     font-family: 'Courier New', Courier, monospace;
-    padding-left: 120px;
 }
-footer .row div {
-    display: flex;
-    align-items: center;
-}
+
 .menu img {
     width: 70px !important;
     height: 70px !important; 
@@ -172,7 +168,7 @@ footer .row div {
 .navbar-light .navbar-toggler {
     border: none;
 }
-..navbar-toggler {
+.navbar-toggler {
     padding: 0;
 }
 .doarecebe .card-body  {

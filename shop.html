@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacotes Solidários</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+    <header>
+        <div class="row">
+            <div class="col-md-4 d-none d-md-block">
+                <img src="img/whatsapp.png" alt="Logo Whatsapp">
+                <span>(24) 98877-8477</span>
+            </div>
+            <div class="col-md-4 d-none d-sm-block">
+                <img src="img/horario_de_atendimento.png" alt="">
+                <span>Atendimento: Seg a Sex das 8 as 16h</span>
+            </div>
+            <div class="col-md-4">
+                <div class="container">
+                    <img src="img/login1.png" alt="Ícone Login">
+    
+                    <!--LOGIN DROPDOWN-->
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onmouseover="verLogin()">
+                            Olá, faça seu login<br>ou cadastre-se!
+                        </button>
+                        <div class="dropdown-menu">
+                            <form class="px-4 py-3" id="menuLogin">
+                                <div class="form-group">
+                                    <label for="exampleDropdownFormEmail1">Endereço de email</label>
+                                    <input type="email" class="form-control" id="email"
+                                        placeholder="email@exemplo.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleDropdownFormPassword1">Senha</label>
+                                    <input type="password" class="form-control" id="senha"
+                                        placeholder="Senha">
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                    <label class="form-check-label" for="dropdownCheck">
+                                        Remember me
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary" onclick="login()">Entrar</button>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Novo, por aqui? Regitre-se.</a>
+                                <a class="dropdown-item" href="#">Esqueceu a senha?</a>
+                            </form>
+                            <div id="menuCliente" style="display: none">
+                                <button class="dropdown-item" type="button">Meus Dados</button>
+                                <button class="dropdown-item" type="button">Minhas Compras</button>
+                                <button class="dropdown-item" type="button" onclick="sair()">Sair</button>
+                              </div>
+                        </div>
+                    </div>
+                    <!--FIM DO LOGIN DROPDOWN-->
+    
+                    <img src="img/carrinho.png"><span class="itensPedidos">0</span>
+    
+                </div>
+            </div>
+        </div>
+        <!-- Como um link -->
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#"> <img src="img/logo.png" alt="Logo TMJ Grupo Solidário"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+                aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="menu"> <img src="img/menu.png" alt="Logo Menu"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(Página atual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Instituições</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Mural</a>
+                    </li> -->
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pacotes Solidários
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown10">
+                            <a class="dropdown-item" href="#">Cestas Básicas </a>
+                            <!-- <ul>
+                                        <li><a href="#">Alimentação</a></li>
+                                        <li><a href="#">Limpeza</a></li>
+                                        <li><a href="#">Panificação</a></li>
+                                        <li><a href="#">Feira</a></li>
+                                        <li><a href="#">Proteica</a></li>
+                                    </ul> -->
+                            <a class="dropdown-item" href="#">Enxovais</a>
+                            <a class="dropdown-item" href="#">Vestuário</a>
+                            <a class="dropdown-item" href="#">Amigo Pet</a>
+                            <a class="dropdown-item" href="#">Brinquedos</a>
+                            <a class="dropdown-item" href="#">Multirão</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Prestação de Contas</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="row">
+        <div class="col-md-2 d-none d-md-block">
+            <h2>Categorias</h2>
+            <ul>
+                <li><a href="#">Cestas Básicas</a></li>
+                <li><a href="#">Enxovais</a></li>
+                <li><a href="#">Vestuário</a></li>
+                <li><a href="#">Amigo Pet</a></li>
+                <li><a href="#">Multirão</a></li>
+            </ul>
+        </div>
+        <div class="col-md-10 produtos gridProdutos">
+            <div class="row">
+                <div class="col-md-4">Alimentação</div>
+                <div class="col-md-4">Limpeza</div>
+                <div class="col-md-4">Panificação</div>
+                <div class="col-md-4">Feira</div>
+                <div class="col-md-4">Proteica</div>
+                <div class="col-md-4">Enxovais</div>
+                <div class="col-md-4">Vestuário</div>
+                <div class="col-md-4">Amigo Pet</div>
+            </div>
+          
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col-md-12">
+                <img src="img/horario_de_atendimento.png" alt="">
+                <span>Atendimento: Seg a Sex das 8 as 16h</span>
+            </div>
+            <div class="col-md-12">
+                <ul class="social">
+                    <li><a href="http://facebook.com/tmjgruposolidario"> <img src="img/facebook2.png" alt="Logo Facebbok"></a></li>
+                    <li><a href="http://instagram.com/tmjgruposolidario"> <img class="ig" src="img/instagram2.png"                alt="Logo Instagram" width="100px" height="100px"></a></li>
+                    <li><a href="https://www.whatsapp.com/"><img src="img/whatsapp.png" alt="Logo Whatsapp"></a></li>
+                </ul>
+            </div>
+            <div class="col-md-12">
+                <span class="frase">
+                    Copyright &copy; 2020 | Direitos reservados a TMJ Grupo Solidário Desenvolvido por Grupo4.
+                </span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
