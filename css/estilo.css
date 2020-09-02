@@ -1,3 +1,6 @@
+body {
+    max-width: 100vw;
+}
 header .row {
     background-color: #402c23;
     color: white;
@@ -6,6 +9,7 @@ header .row {
 }
 header .navbar {
     background-color:#f5f5dc;
+    padding: 0;
 }
 header img {
     width: 36px;
@@ -14,12 +18,16 @@ header img {
 header .navbar img{
     width: 250px;
     height: 125px;
+    padding-left: 10px;
 }
 header {
     text-align: center;
 }
 
 header .row .col-md-4 {
+    margin: auto;
+}
+header .collapse .navbar-nav {
     margin: auto;
 }
 
@@ -62,7 +70,7 @@ header .row .col-md-4 {
     background-color: #402c23;
     border-radius: 35px;
     color: white;
-    height: 450px;
+    height: 377px;
     text-align: center;
     padding-right: 30px;
     padding-left: 30px;
@@ -92,6 +100,10 @@ footer {
     padding-top: 50px;
 }
 
+.contato h3 {
+    margin-bottom: 23px;
+}
+
 .contato .container {
     display: contents;
 }
@@ -115,12 +127,15 @@ footer {
     float: left;
     margin-right: 15px;
 }
+
+.pacotes .row {
+    margin-bottom: 35px;
+}
 .icon img {
     width: 60px;
     height: 60px;
 }
 .nav-link {
-    margin-left: 60px;
     font-size: 23px;
 }
 footer li {
@@ -157,11 +172,13 @@ footer .row div {
 .navbar-light .navbar-toggler {
     border: none;
 }
+..navbar-toggler {
+    padding: 0;
+}
 .doarecebe .card-body  {
     background-color: #402c23;
     border-radius: 35px;
     color: white;
-    height: 150px;
     text-align: center;
     padding-right: 30px;
     padding-left: 30px;
@@ -209,4 +226,8 @@ footer .row div {
 #dropdownMenuButton {
     margin-left: 4px;
     margin-right: 8px;
+}
+
+.navbar-nav {
+    width: max-content;
 }
