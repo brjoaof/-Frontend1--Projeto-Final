@@ -1,3 +1,15 @@
+body {
+    max-width: 1499px;
+    margin: 0 auto;
+}
+.navbar, .row {
+    max-width: 1499px;
+}
+
+.row {
+    margin: 0;
+}
+
 .gridProdutos .col-md-4 {
     background-color: #f5f5dc;
     height: 380px;
@@ -5,6 +17,7 @@
     min-width: 300px;
     max-width: 300px;
     padding: 0;
+    margin-bottom: 73px;
 }
 .col-md-2 {
     border: solid #402c23;
@@ -36,18 +49,24 @@ h5 del{
 }
 .cestaAlimentacao {
     border-radius: 10px;
-    background-color: crimson;
+    background-color: #402c23;
     color: white;
     font-weight: 700;
 }
 
 footer{
     margin-top: 20px;
+    max-width: 1499px;
 }
 
 .card-img-top{
     width: 300px;
     height: 190px;
+}
+
+.card-header {
+    background-color: #402c23;
+    color: white;
 }
 
 .carousel-item img {

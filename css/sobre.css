@@ -1,5 +1,6 @@
-.h3, h3{
-    text-align: center;    
+h3{
+    text-align: center; 
+    margin: 30px auto;   
 }
 .card-img {
     width: 300px;
@@ -13,8 +14,7 @@
     margin-top: 53px;
 }
 .historia {
-    padding-top: 70px;
     text-align: justify;
-    margin-left: 90px;
-    margin-right: 90px;
+    margin: 0 auto;
+    padding: 22px;
 }
