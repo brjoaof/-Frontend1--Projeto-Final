@@ -1,0 +1,29 @@
+.h2, h2 {
+    text-align: center;
+    background-color: #dccbb5;
+}
+.h3, h3 {
+    text-align: center;
+} 
+.h4, h4 {
+    text-align: center;
+} 
+.h6, h6 {
+    text-align: center;
+} 
+ul {
+    text-align-last: center;
+}
+dl {
+    text-align: center;
+}
+li {
+    list-style-type: none;
+}
+figure {
+    text-align: center;
+}
+.card-img {
+    width: 1500px;
+    height: 800px;
+}

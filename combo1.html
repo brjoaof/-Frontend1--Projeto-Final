@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combo 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/produto.css">
+</head>
+
+<body>
+    <header>
+        <div class="row">
+            <div class="col-md-4 d-none d-md-block">
+                <img src="img/whatsapp.png" alt="Logo Whatsapp">
+                <span>(24) 98877-8477</span>
+            </div>
+            <div class="col-md-4 d-none d-sm-block">
+                <img src="img/horario_de_atendimento.png" alt="">
+                <span>Atendimento: Seg a Sex das 8 as 16h</span>
+            </div>
+            <div class="col-md-4">
+                <div class="container">
+                    <img src="img/login1.png" alt="Ícone Login">
+
+                    <!--LOGIN DROPDOWN-->
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onmouseover="verLogin()">
+                            Olá, faça seu login<br>ou cadastre-se!
+                        </button>
+                        <div class="dropdown-menu">
+                            <form class="px-4 py-3" id="menuLogin">
+                                <div class="form-group">
+                                    <label for="exampleDropdownFormEmail1">Endereço de email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="email@exemplo.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleDropdownFormPassword1">Senha</label>
+                                    <input type="password" class="form-control" id="senha" placeholder="Senha">
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                    <label class="form-check-label" for="dropdownCheck">
+                                        Remember me
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary" onclick="login()">Entrar</button>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Novo, por aqui? Regitre-se.</a>
+                                <a class="dropdown-item" href="#">Esqueceu a senha?</a>
+                            </form>
+                            <div id="menuCliente" style="display: none">
+                                <button class="dropdown-item" type="button">Meus Dados</button>
+                                <button class="dropdown-item" type="button">Minhas Compras</button>
+                                <button class="dropdown-item" type="button" onclick="sair()">Sair</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM DO LOGIN DROPDOWN-->
+
+                    <img src="img/carrinho.png"><span class="itensPedidos">0</span>
+
+                </div>
+            </div>
+        </div>
+        <!-- Como um link -->
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#"> <img src="img/logo.png" alt="Logo TMJ Grupo Solidário"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+                aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="menu"> <img src="img/menu.png" alt="Logo Menu"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(Página atual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Instituições</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Mural</a>
+                    </li> -->
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pacotes Solidários
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown10">
+                            <a class="dropdown-item" href="#">Cestas Básicas </a>
+                            <!-- <ul>
+                                        <li><a href="#">Alimentação</a></li>
+                                        <li><a href="#">Limpeza</a></li>
+                                        <li><a href="#">Panificação</a></li>
+                                        <li><a href="#">Feira</a></li>
+                                        <li><a href="#">Proteica</a></li>
+                                    </ul> -->
+                            <a class="dropdown-item" href="shop.html">Enxovais</a>
+                            <a class="dropdown-item" href="shop.html">Vestuário</a>
+                            <a class="dropdown-item" href="shop.html">Amigo Pet</a>
+                            <a class="dropdown-item" href="shop.html">Brinquedos</a>
+                            <a class="dropdown-item" href="shop.html">Multirão</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Prestação de Contas</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <h2> Combo1 - Alimentação e Feira (30 itens)</h2>
+    <figure>
+        <img src="img/combo1.png" ass="card-img" alt="...">
+    </figure>
+
+    <h3>R$ 120,00</h3>
+    <h4>Conteudo da caixa:</h4>
+    
+    <dl class="parte1">
+        <dt>Alimentação:</dt>
+        <dd> 5 kg arroz; </dd>
+        <dd> 1 kg feijão; </dd>
+        <dd> 2 litros de óleo de soja; </dd>
+        <dd> 2 litros de óleo de soja; </dd>
+        <dd> 1 kg sal; </dd>
+        <dd> 1 kg de açúcar; </dd>
+        <dd> 500 gr café; </dd>
+        <dd> 1 lata molho de tomate; </dd>
+        <dd> 1 kg farinha de trigo; </dd>
+        <dd> 2 latas de sardinha/atum; </dd>
+        <dd> 1 lata de milho; </dd>
+        <dd> 1 lata de ervilha ou seleta de legumes; </dd>
+        <dd> 2 pacote de macarrão espaguete ou parafuso; </dd>
+        <dd> 1 kg fubá; </dd>
+        <dd> 3 pacote biscoito doce ou salgado; </dd>
+        <dd> 2 lata de leite em pó; </dd>
+        <dd> 500 gramas de canjica; </dd>
+        <dd> 500 gramas de leite condensado; </dd>
+        <dd> 500 gramas de leite achocolatado (nescau); </dd>
+        <dd> 2 pacotes de papel higiênico; </dd>
+        <dd> 2 sabonetes; </dd>
+        <dd> 2 cremes dental; </dd>
+        <dt>Feira:</dt>
+        <dt>Legume:</dt>
+        <dd> Inhames; </dd>
+        <dd> 1 pedaço pequeno de Abóbora; </dd>
+        <dd> 4 Batatas doce; </dd>
+        <dd> 6 Cebolas; </dd>
+        <dd> 6 Chuchu; </dd>
+        <dd> 3 Beterraba; </dd>
+        <dd> 4 cabeças de Alho; </dd>
+        <dd> 14 Cenouras; </dd>
+        <dd> 2 Abobrinhas; </dd>
+        <dd> 2 Berinjelas; </dd>
+        <dd> 8 Jilós; </dd>
+        <dd> 4 Mandiocas; </dd>
+        <dt>Fruta:</dt>
+        <dd> 6 Limões; </dd>
+        <dd> 4 Tomates; </dd>
+        <dd> 4 Pêras; </dd>
+        <dd> 1 cacho de Banana prata; </dd>
+        <dd> 6 Tangerinas; </dd>
+        <dd> 6 Maçãs; </dd>
+        <dd> 1 Mamão grande; </dd>
+        <dd> 12 Laranjas; </dd>
+        <dt>Verdura:</dt>
+        <dd> Brócolis; </dd>
+        <dd> Alface; </dd>
+        <dd> Repolho; </dd>
+        <dd> Agrião; </dd>
+        <dd>Couve;</dd>
+        <dd>Cheiro-verde;</dd>
+        <dd>Couve-flor;</dd>
+        <dd>Alho-poró;</dd>
+        <dd>Espinafre;</dd>
+        <dd>Mostarda;</dd>
+        <dd>Rúcula;</dd>
+    </dl>
+    <h4>Informações gerais:</h4>
+    <ul>
+        <li>Campanha solidária somente para a cidade de Petrópolis;</li>
+        <li>Não haverá cobrança adicional de valor de frete;</li>
+        <li>Nossos mercados parceiros da região serão responsáveis por embalar e entregar as cestas nos endereços
+            cadastrados das instituiões;</li>
+        <li>As entregas ocorrerão entre o dia 5 e o dia 10 de cada mês;</li>
+        <li>Produtos e marcas poderão ser substituídos por similares ou superiores;</li>
+        <li>Fotos meramente ilustrativas.</li>
+    </ul>
+
+    <footer>
+        <div class="row">
+            <div class="col-md-12">
+                <img src="img/horario_de_atendimento.png" alt="">
+                <span>Atendimento: Seg a Sex das 8 as 16h</span>
+            </div>
+            <div class="col-md-12">
+                <ul class="social">
+                    <li><a href="http://facebook.com/tmjgruposolidario"> <img src="img/facebook2.png"
+                                alt="Logo Facebbok"></a></li>
+                    <li><a href="http://instagram.com/tmjgruposolidario"> <img class="ig" src="img/instagram2.png"
+                                alt="Logo Instagram" width="100px" height="100px"></a></li>
+                    <li><a href="https://www.whatsapp.com/"><img src="img/whatsapp.png" alt="Logo Whatsapp"></a></li>
+                </ul>
+            </div>
+            <div class="col-md-12">
+                <span class="frase">
+                    Copyright &copy; 2020 | Direitos reservados a TMJ Grupo Solidário Desenvolvido por Grupo4.
+                </span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
