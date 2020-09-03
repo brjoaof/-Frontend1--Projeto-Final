@@ -58,36 +58,31 @@ header .collapse .navbar-nav {
     margin-right: auto;
 }
 
-.foco .row {
-    margin-top: -50px;
-    padding-left: 80px;
-    padding-right: 80px;
-}
-
-.foco .card {
-    background-color: transparent;
-    border: none;
-}
-.foco .card-body  {
+.foco .col-md-4  {
     background-color: #402c23;
-    border-radius: 35px;
+    border-radius: 25px;
     color: white;
-    height: 377px;
     text-align: center;
-    padding-right: 30px;
-    padding-left: 30px;
+    margin-bottom: 20px;
+    padding: 12px 20px 10px 20px;
 }
 
-.foco p {
-    margin-top: 30px;
-    margin-right: 30px;
-    margin-left: 30px;
-    font-size: 18px;
+.foco .row {
+    margin: -40px 0 0 0; 
 }
-.foco h2 {
-    margin-top: 20px;
-    text-align:center;
-}
+
+@media (min-width: 768px){
+.col-md-4 {
+    max-width: 28.333333%;
+    margin: 0 auto;
+}}
+
+@media (min-width: 768px){
+.col-md-6 {
+    margin: 0 auto;
+    max-width: 45%;
+}}
+
 footer {
     background-color: #402c23;
     color: white;
@@ -110,8 +105,8 @@ footer {
 }
 
 .pacotes {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-bottom: 50px;
     margin-right: 50px;
     margin-left: 50px;
 
@@ -129,8 +124,8 @@ footer {
     margin-right: 15px;
 }
 
-.pacotes .row {
-    margin-bottom: 35px;
+.pacotes .col-md-4 {
+    margin-bottom: 20px;
 }
 .icon img {
     width: 60px;
@@ -171,24 +166,15 @@ footer .col-md-12 {
 .navbar-toggler {
     padding: 0;
 }
-.doarecebe .card-body  {
+.doarecebe .col-md-6  {
     background-color: #402c23;
-    border-radius: 35px;
+    border-radius: 25px;
     color: white;
     text-align: center;
-    padding-right: 30px;
-    padding-left: 30px;
-}
-.doarecebe .row {
-    margin-top: -50px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
-.doarecebe .card {
-    background-color: transparent;
-    border: none;
-}
 .doarecebe .icon {
     width: 60px;
     height: 60px;
