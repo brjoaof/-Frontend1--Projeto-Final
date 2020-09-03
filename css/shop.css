@@ -19,6 +19,10 @@ body {
     padding: 0;
     margin-bottom: 73px;
 }
+
+.gridProdutos a {
+    color: white;
+}
 .col-md-2 {
     border: solid #402c23;
     margin: 20px auto 0 auto;
