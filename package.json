@@ -1,0 +1,20 @@
+{
+  "name": "-Frontend1--Projeto-Final",
+  "version": "1.0.0",
+  "description": "Projeto Final da Matéria de Frontend 1 - Site com Html, Css e JavaScript usando BootStrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brjoaof/-Frontend1--Projeto-Final.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brjoaof/-Frontend1--Projeto-Final/issues"
+  },
+  "homepage": "https://github.com/brjoaof/-Frontend1--Projeto-Final#readme"
+}
