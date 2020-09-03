@@ -10,7 +10,7 @@ function verLogin() {
     $('#dropdownMenuButton').dropdown('toggle')
 }
 
-function login() {
+const login = () => {
     var email = document.querySelector("#email").value
     var senha = document.querySelector("#senha").value
   
